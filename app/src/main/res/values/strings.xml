@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CurrencyConventer</string>
+    <string-array name="currency_list">
+        <item>RUB</item>
+        <item>USD</item>
+    </string-array>
 </resources>

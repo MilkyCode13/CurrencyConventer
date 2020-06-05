@@ -23,24 +23,14 @@
         app:layout_constraintVertical_bias="0.21" />
 
     <TextView
-        android:id="@+id/firstCurrencyTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:text="RUB"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/firstCurrencyNumberInput"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/firstCurrencyNumberInput" />
-
-    <TextView
         android:id="@+id/secondCurrencyTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="USD"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/secondCurrencyNumberView"
-        app:layout_constraintStart_toStartOf="@+id/firstCurrencyTextView" />
+        app:layout_constraintStart_toStartOf="@+id/currencySpinner" />
 
     <TextView
         android:id="@+id/secondCurrencyNumberView"
@@ -53,4 +43,14 @@
         app:layout_constraintStart_toStartOf="@+id/firstCurrencyNumberInput"
         app:layout_constraintTop_toBottomOf="@+id/firstCurrencyNumberInput"
         app:layout_constraintVertical_bias="0.114" />
+
+    <Spinner
+        android:id="@+id/currencySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/currency_list"
+        app:layout_constraintBottom_toBottomOf="@+id/firstCurrencyNumberInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstCurrencyNumberInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>
