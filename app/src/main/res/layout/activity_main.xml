@@ -53,7 +53,7 @@
         app:layout_constraintStart_toStartOf="@+id/firstCurrencySpinner" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/swapButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
