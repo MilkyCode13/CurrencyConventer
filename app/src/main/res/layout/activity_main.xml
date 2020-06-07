@@ -23,16 +23,6 @@
         app:layout_constraintVertical_bias="0.21" />
 
     <TextView
-        android:id="@+id/secondCurrencyTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="USD"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/secondCurrencyNumberView"
-        app:layout_constraintStart_toStartOf="@+id/currencySpinner" />
-
-    <TextView
         android:id="@+id/secondCurrencyNumberView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,7 +35,7 @@
         app:layout_constraintVertical_bias="0.114" />
 
     <Spinner
-        android:id="@+id/currencySpinner"
+        android:id="@+id/firstCurrencySpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -53,4 +43,24 @@
         app:layout_constraintBottom_toBottomOf="@+id/firstCurrencyNumberInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/firstCurrencyNumberInput" />
+
+    <Spinner
+        android:id="@+id/secondCurrencySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/currency_list"
+        app:layout_constraintBottom_toBottomOf="@+id/secondCurrencyNumberView"
+        app:layout_constraintStart_toStartOf="@+id/firstCurrencySpinner" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:contentDescription="Swap"
+        android:onClick="swapCurrencies"
+        app:layout_constraintBottom_toTopOf="@+id/secondCurrencySpinner"
+        app:layout_constraintStart_toStartOf="@+id/firstCurrencySpinner"
+        app:layout_constraintTop_toBottomOf="@+id/firstCurrencySpinner"
+        app:srcCompat="@drawable/ic_baseline_swap_vert_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

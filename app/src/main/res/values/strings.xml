@@ -3,5 +3,10 @@
     <string-array name="currency_list">
         <item>RUB</item>
         <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>CHF</item>
+        <item>UAH</item>
+        <item>BYR</item>
     </string-array>
 </resources>
